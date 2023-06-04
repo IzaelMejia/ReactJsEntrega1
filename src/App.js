@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, {Component} from "react"
 import './App.css';
 
-function App() {
+//Componenets 
+import Nav from "./coponents/nav"
+import CardsProdu from "./coponents/card/card"
+
+class App extends Component  {
+  render (){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Nav/>
+        <div className="productos">
+        <CardsProdu 
+        name="Sueter gris" 
+        precio="$200"
+        img="https://www.pngplay.com/wp-content/uploads/2/Sweater-Transparent-File.png"/>
+      </div>
     </div>
+
   );
+} 
 }
 
 export default App;
