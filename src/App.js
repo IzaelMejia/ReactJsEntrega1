@@ -2,13 +2,14 @@ import React, {Component} from "react"
 import './App.css';
 
 //Componenets 
-import Nav from "./coponents/nav"
+import Nav from "./coponents/navbar/nav"
 import CardsProdu from "./coponents/card/card"
 
 class App extends Component  {
   render (){
   return (
     <div className="App">
+      
         <Nav/>
         <div className="productos">
         <CardsProdu 

@@ -12,7 +12,7 @@ return (
       <CardMedia
         component="img"
         alt="green iguana"
-        height="140"
+        height="220"
         image={props.img}
       />
       <CardContent>
